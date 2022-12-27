@@ -1,0 +1,9 @@
+// Os imports no SASS só devem ser inseridos e chamados no arquivo style.scss
+// de acordo com sua hierarquia. Se a hierarquia estiver errada em
+// questão da sua ordem, podem apresentar erro de leitura.
+
+// Import Sass Colors
+@import "./colors/colors.scss";
+
+// Import Sass page Home
+@import "./pages/home.scss";

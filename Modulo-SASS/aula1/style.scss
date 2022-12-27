@@ -1,0 +1,14 @@
+// Aula de intalação e configuração do SASS,
+// basicamente é necessario possuir o node.js instalado
+// para podermos executar e instalar o sass globalmente com o comando:
+//      npm install -g sass.
+// Com o sass devidamente instalado e configurado excutamos o comando para o sass
+// assistir as alteraçoes no arquivo style.scss e compilar para o css/style.css:
+//      sass --watch sass/style.scss:css/style.css
+// depois disso é só trabalharmos no arquivo style.scss com nosso codigo de estilização CSS.
+
+.quadrado {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}

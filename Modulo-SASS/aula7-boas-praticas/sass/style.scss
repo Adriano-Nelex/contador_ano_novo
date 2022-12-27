@@ -1,0 +1,13 @@
+Basicamente aplicamos tudo o que visto nos modulos anteriores como:
+  . Variaveis;
+  . Nesting;
+  . Import;
+  . Mixin;
+  . Herança e Extends
+  . Organização e separação de pastas.
+
+@import "variables/colors/colors.scss";
+@import "variables/common/common.scss";
+
+@import "pages/cadastro.scss";
+@import "pages/login.scss";

@@ -1,0 +1,29 @@
+// Na classe abaixo aplicamos o conceito de herança, no qual uma classe filha
+// pode herdar recursos de uma classe pai. importante analisar que a classe
+// btn-amarelo está herdando as propriedades da classe btn.
+.btn {
+  width: 125px;
+  padding: 10px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 10px;
+
+  &.btn-amarelo {
+    background-color: yellow;
+    color: black;
+  }
+  &#btn-azul {
+    background-color: blue;
+    color: white;
+  }
+}
+
+// Logo abaixo com o extends importamos uma classe externa dentro de outra,
+// assim trazendo propriedades de uma classe externa.
+.btn-roxo {
+  @extend .btn;
+  background-color: purple;
+  color: white;
+}
+
+// OBS: Das duas o recomendado e sempre utilizarmos Herança. mais vai de cada programador.

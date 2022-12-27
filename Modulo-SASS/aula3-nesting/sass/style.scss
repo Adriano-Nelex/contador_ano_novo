@@ -1,0 +1,20 @@
+// Nesting é a forma de trabalharmos com o css em modo de cascata com as
+// classes uma dentro da outra conforme sua hierarquia. Assim reduzimos
+// drasticamente a quantidade de linhas a serem utilizadas em um CSS padrão.
+.classe1 {
+  ul {
+    background-color: red;
+    li {
+      background-color: blue;
+      padding: 10px 0;
+    }
+  }
+  button {
+    background-color: green;
+    cursor: pointer;
+    &:hover {
+      background-color: red;
+      transition: 500ms;
+    }
+  }
+}

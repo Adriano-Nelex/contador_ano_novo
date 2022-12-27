@@ -1,0 +1,10 @@
+// Minify = É um recurso para otimizar o CSS, removendo espaços e comentarios,
+// deixando tudo em apenas uma unica linha com o comando:
+// sass sass/style.scss:css/style.css --style compressed
+// isso torna o arquivo css/style.css otimizado e comprimido.
+
+@import "variables/colors/colors.scss";
+@import "variables/common/common.scss";
+
+@import "pages/cadastro.scss";
+@import "pages/login.scss";

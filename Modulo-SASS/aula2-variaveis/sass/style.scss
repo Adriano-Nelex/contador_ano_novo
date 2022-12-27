@@ -1,0 +1,22 @@
+// Trabalhando com variaveis em sass.
+// Cria-se a variavel como no exemplo abaixo:
+$btn-color: #ff4043;
+$width-btn: 100px;
+
+// E podemos aplicar em qualquer classe ou propriedade.
+.btn1 {
+  width: $width-btn;
+  background-color: $btn-color;
+}
+
+.btn2 {
+  width: 70px;
+  background-color: $btn-color;
+}
+
+// Basicamente isso ajuda na manutenção do codigo quando por exemplo
+// voce possuir varios Botões e precisar mudar a cor de todos eles,
+// se o seu codigo possuir 1000 linhas fazer isso manualamente vai dar muito trabalho.
+// quando se cria uma variavel com a cor do botão e essa variavel é inserida
+// em todos os botoes, bastamos apenas alterar a cor da variavel e automaticamente
+// a nova cor é aplicada em todos os botões reduzindo o tempo de retrabalho.

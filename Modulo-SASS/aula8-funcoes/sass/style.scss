@@ -1,0 +1,34 @@
+// Nesse modulo aplicamos o conceito de funções Sass e como utilizar em nosso projeto.
+// link com funções do SASS: https://www.w3schools.com/sass/sass_functions_string.php
+
+// #title {
+//   // Utilizamos uma função padrão do sass para misturar 2 cores.
+//   color: mix(red, yellow, 70%);
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// O codigo abaixo Criamos uma função SASS com um mixin e ainda
+// um if else para verificar a cor de fundo e definirmos a cor do texto.
+@function color-title($background-color) {
+  @if (lightness($background-color) > 50) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
+
+@mixin background-color-mixin($color) {
+  background-color: $color;
+  color: color-title($color);
+}
+
+.title {
+  height: 100vh;
+  @include background-color-mixin(blue);
+}
+
+// OBS: Funções são bem pouco usadas no sass então voce não vai ver com muita frequeencia.

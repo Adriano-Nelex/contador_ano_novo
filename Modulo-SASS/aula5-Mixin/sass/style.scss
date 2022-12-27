@@ -1,0 +1,24 @@
+// Aplicando o conceito de mixin, criamos o mixin conforme abaixo:
+@mixin text-style($color, $font-size, $font-family) {
+  color: $color;
+  font-size: $font-size;
+  font-family: $font-family;
+}
+
+// O codigo comentado seria o padrão css, com o include chamamos o mixin.
+// com isso ganhamos mais linhas de codigo ajudando na manutenção do codigo
+// e reaproveitando seu codigo em outras partes do projeto.
+.texts {
+  h1 {
+    // color: #ff4043;
+    // font-size: 20px;
+    // font-family: Arial, Helvetica, sans-serif;
+    @include text-style(#ff4043, 34px, Arial);
+  }
+  p {
+    // color: blue;
+    // font-size: 22px;
+    // font-family: sans-serif;
+    @include text-style(blue, 22px, sans-serif);
+  }
+}

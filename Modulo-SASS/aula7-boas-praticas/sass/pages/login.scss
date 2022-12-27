@@ -1,0 +1,5 @@
+.container {
+  p {
+    @include text-style($second-color, 22px, arial);
+  }
+}
