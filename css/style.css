@@ -19,6 +19,7 @@ body {
   left: 100px;
   right: 100px;
   bottom: 80px;
+  margin-bottom: 50px;
   background: rgba(0, 0, 0, 0.5490196078) url("../images/ano-novo.jpg");
   background-blend-mode: initial;
   background-size: cover;
