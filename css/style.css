@@ -6,7 +6,7 @@
 }
 
 body {
-  background: rgb(15, 15, 15) url("../images/bg-2022.jpg");
+  background: rgb(15, 15, 15) url("../images/ano-novo.jpg");
   background-attachment: fixed;
   background-blend-mode: hard-light;
   background-size: cover;
@@ -19,8 +19,8 @@ body {
   left: 100px;
   right: 100px;
   bottom: 80px;
-  background: rgba(0, 0, 0, 0.5490196078) url("../images/bg-2022.jpg");
-  background-blend-mode: hard-light;
+  background: rgba(0, 0, 0, 0.5490196078) url("../images/ano-novo.jpg");
+  background-blend-mode: initial;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -77,18 +77,26 @@ body {
   border: 2px solid #fff;
 }
 .container .countdown #day:before {
-  content: "Days";
+  content: "Dias";
 }
 .container .countdown #hour:before {
-  content: "Hours";
+  content: "Horas";
 }
 .container .countdown #minute:before {
-  content: "Minutes";
+  content: "Minutos";
 }
 .container .countdown #second:before {
-  content: "Seconds";
+  content: "Segundos";
 }
 
+@media (max-width: 992px) {
+  .container h2 {
+    margin-top: 0;
+  }
+  .container .countdown {
+    margin-top: 0;
+  }
+}
 @media (max-width: 768px) {
   .container {
     left: 30px;
@@ -109,8 +117,8 @@ body {
   .container {
     left: 15px;
     right: 15px;
-    top: 50px;
-    bottom: 50px;
+    top: 20px;
+    bottom: 20px;
   }
   .container h2 {
     margin-top: 0px;

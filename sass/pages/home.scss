@@ -5,7 +5,7 @@
   right: 100px;
   bottom: 80px;
   background: #0000008c $background;
-  background-blend-mode: hard-light;
+  background-blend-mode: initial;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -60,16 +60,27 @@
       }
     }
     #day:before {
-      content: "Days";
+      content: "Dias";
     }
     #hour:before {
-      content: "Hours";
+      content: "Horas";
     }
     #minute:before {
-      content: "Minutes";
+      content: "Minutos";
     }
     #second:before {
-      content: "Seconds";
+      content: "Segundos";
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    h2 {
+      margin-top: 0;
+    }
+    .countdown {
+      margin-top: 0;
     }
   }
 }
@@ -95,8 +106,8 @@
   .container {
     left: 15px;
     right: 15px;
-    top: 50px;
-    bottom: 50px;
+    top: 20px;
+    bottom: 20px;
     h2 {
       margin-top: 0px;
     }
