@@ -11,6 +11,7 @@ body {
   background-blend-mode: hard-light;
   background-size: cover;
   background-position: center;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -19,7 +20,6 @@ body {
   left: 100px;
   right: 100px;
   bottom: 80px;
-  margin-bottom: 50px;
   background: rgba(0, 0, 0, 0.5490196078) url("../images/ano-novo.jpg");
   background-blend-mode: initial;
   background-size: cover;
@@ -91,11 +91,16 @@ body {
 }
 
 @media (max-width: 992px) {
+  .container {
+    height: auto;
+  }
   .container h2 {
     margin-top: 0;
+    padding-top: 50px;
   }
   .container .countdown {
     margin-top: 0;
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 768px) {

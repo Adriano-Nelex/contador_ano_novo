@@ -4,7 +4,6 @@
   left: 100px;
   right: 100px;
   bottom: 80px;
-  margin-bottom: 50px;
   background: #0000008c $background;
   background-blend-mode: initial;
   background-size: cover;
@@ -77,11 +76,14 @@
 
 @media (max-width: 992px) {
   .container {
+    height: auto;
     h2 {
       margin-top: 0;
+      padding-top: 50px;
     }
     .countdown {
       margin-top: 0;
+      padding-bottom: 50px;
     }
   }
 }
