@@ -2,7 +2,14 @@ var countDate = new Date("Jan 1, 2024 00:00:00").getTime();
 
 function newYear() {
   var now = new Date().getTime();
-  gap = countDate - now;
+  
+  // Verificar se a data atual passou da data-alvo
+  if (now > countDate) {
+    var currentYear = new Date().getFullYear();
+    countDate = new Date("Jan 1, " + (currentYear + 1) + " 00:00:00").getTime();
+  }
+
+  var gap = countDate - now;
 
   var second = 1000;
   var minute = second * 60;
