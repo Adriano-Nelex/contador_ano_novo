@@ -1,12 +1,17 @@
-var countDate = new Date("Jan 1, 2025 00:00:00").getTime();
+var countDate = calculateNextYearDate();
+
+function calculateNextYearDate() {
+  var currentYear = new Date().getFullYear();
+  var nextYear = currentYear + 1;
+  return new Date("Jan 1, " + nextYear + " 00:00:00").getTime();
+}
 
 function newYear() {
   var now = new Date().getTime();
   
   // Verificar se a data atual passou da data-alvo
   if (now > countDate) {
-    var currentYear = new Date().getFullYear();
-    countDate = new Date("Jan 1, " + (currentYear + 1) + " 00:00:00").getTime();
+    countDate = calculateNextYearDate();
   }
 
   var gap = countDate - now;
