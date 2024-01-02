@@ -1,3 +1,10 @@
+// Obter o ano atual e calcular o próximo ano
+var currentYear = new Date().getFullYear();
+var nextYear = currentYear + 1;
+
+// Exibir o próximo ano no elemento HTML
+document.getElementById("nextYear").innerText = nextYear;
+
 var countDate = calculateNextYearDate();
 
 function calculateNextYearDate() {
