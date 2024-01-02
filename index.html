@@ -19,7 +19,11 @@
   </head>
   <body>
     <div class="container">
-      <h2><span>Contagem regressiva para o ano novo</span>2024</h2>
+      <?php
+        $currentYear = date("Y");
+        $nextYear = $currentYear + 1;
+      ?>
+      <h2><span>Contagem regressiva para o ano novo</span><?php echo $nextYear; ?></h2>
       <div class="countdown">
         <div id="day">0</div>
         <div id="hour">0</div>
